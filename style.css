@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: lightblue;
+  }
+  
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .image-gallery {
+    flex: 1;
+  }
+  
+  .image-gallery img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  .thumbnail-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    position: fixed;
+  }
+  
+  .thumbnail-row img {
+    width: 80px;
+    cursor: pointer;
+    border: 2px solid lightblue;
+    transition: 0.3s;
+  }
+  
+  .thumbnail-row img:hover {
+    border-color: orange;
+  }
+  
+  .product-details {
+    flex: 1;
+  }
+  
+  .price {
+    color: green;
+    font-size: 24px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+
+
+
+ 

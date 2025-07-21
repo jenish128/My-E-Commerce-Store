@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+  <header>
+    <h1>Your Cart</h1>
+  </header>
+
+  <main class="cart-container">
+    <div id="cart-content">
+      <!-- Cart content will be loaded here -->
+    </div>
+    <a href="index.html"><button>Back to Shopping</button></a>
+  </main>
+
+  <script>
+    // Load cart data from localStorage
+    const cartData = JSON.parse(localStorage.getItem("cartItems"));
+    const cartContent = document.getElementById("cart-content");
+
+    if (cartData) {
+      const quantity = parseInt(cartData.quantity);
+      const price = parseFloat(cartData.price.replace(/[^\d.-]+/g, '')); // Clean up price to get a valid number
+      const total = quantity * price;  // Calculate total based on price and quantity
+
+      // Format price and total using toLocaleString() to show ₹ and properly formatted numbers
+      cartContent.innerHTML = `
+        <p><strong>Product Name:</strong> ${cartData.name}</p> <!-- Display product name -->
+        <p><strong>Product Price:</strong> ₹${price.toLocaleString()}</p> <!-- Display price formatted -->
+        <p><strong>Quantity:</strong> ${quantity}</p>
+        <p><strong>Total:</strong> ₹${total.toLocaleString()}</p> <!-- Display total formatted -->
+      `;
+    } else {
+      cartContent.innerHTML = "<p>Your cart is empty.</p>";
+    }
+  </script>
+
+</body>
+</html>

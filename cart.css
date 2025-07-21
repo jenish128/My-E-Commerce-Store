@@ -1,0 +1,37 @@
+ /* cart css */
+
+
+ body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: lightblue;
+  }
+  
+  header h1 {
+    text-align: center;
+  }
+  
+  .cart-container {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .cart-container p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  button {
+   
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  

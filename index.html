@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dynamic Product Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>My E-Commerce Store</h1>
+  </header>
+
+  <main class="product-container">
+    <div class="image-gallery">
+      <img src="image/mobile_6.jpg" alt="Product Image" id="main-image" />
+      <div class="thumbnail-row">
+        <img src="image/Mobile_1.jpg" 
+             data-name="iPhone 16"
+             data-price="₹89,900"
+             data-description="Display: 6.9-inch Super Retina XDR OLED with ProMotion and Always-On Display
+
+             Processor: Apple A18 Pro chip for lightning-fast performance and advanced AI processing
+             
+             Camera System:
+             
+             48MP Main Camera with improved low-light performance
+             
+             48MP Ultra-Wide for immersive shots
+             
+             12MP 5x Telephoto Lens for professional zoom photography" 
+             onclick="updateProduct(this)" />
+
+        <img src="image/Mobile_6.jpg" 
+             data-name="iPhone 16 Pro Max"
+             data-price="₹1,44,900" 
+             data-description="The iPhone 16 Pro Max, features a 6.9-inch Super Retina XDR display, Apple A18 Pro chip, 48MP triple-camera system, and titanium body for the ultimate flagship experience." 
+             onclick="updateProduct(this)" />
+        
+
+        <img src="image/Mobile_2.jpg" 
+            data-name="iPhone 16 pro"
+             data-price="	₹1,09,900" 
+             data-description="Display: 6.9-inch Super Retina XDR OLED with ProMotion and Always-On Display Camera System:
+
+             48MP Main Camera with improved low-light performance 
+             
+             48MP Ultra-Wide for immersive shots
+             
+             12MP 5x Telephoto Lens for professional zoom photography" 
+             onclick="updateProduct(this)" />
+
+        <img src="image/mobile_4.jpg" 
+            data-name="iPhone 16"
+             data-price="₹89,900" 
+             data-description="Display: 6.9-inch Super Retina XDR OLED with ProMotion and Always-On Display Camera System:
+
+             48MP Main Camera with improved low-light performance 
+             
+             48MP Ultra-Wide for immersive shots
+             
+             12MP 5x Telephoto Lens for professional zoom photography" 
+             onclick="updateProduct(this)" />
+
+        <img src="image/mobile_5.jpg" 
+             data-name="iPhone 16 Pro Max"
+             data-price="₹1,44,900" 
+             data-description="Size: 6.9-inch Super Retina XDR OLED display
+                                Resolution: 2868 x 1320 pixels
+                                Features: ProMotion technology (120Hz), Always-On display, HDR10, Dolby Vision" 
+             onclick="updateProduct(this)" />
+
+        <img src="image/shoes_3.jpg" 
+            data-name="Skechers"
+             data-price="₹11,900"
+             data-description="Experience unmatched comfort and modern style with the UrbanStride Everyday Sneakers. Designed for daily wear, these sneakers feature a breathable mesh upper with durable synthetic overlays and a lightweight rubber sole that offers excellent grip and flexibility. The memory foam insole provides all-day cushioning, while the padded collar and lace-up closure ensure a snug, secure fit. " 
+             onclick="updateProduct(this)" />
+
+        <img src="image/shoes_4.jpg"
+             data-name="Nike Air Jordan"
+             data-price="₹10,900" 
+             data-description="Material: Breathable mesh upper with synthetic overlays for durability
+
+             Sole: Lightweight rubber sole with anti-slip grip for traction
+             
+             Cushioning: Memory foam insole for all-day comfort
+             
+             Fit: Lace-up closure with padded collar for a secure and snug fit
+             
+             Design: Minimalist look that pairs well with jeans, joggers, or shorts" 
+             onclick="updateProduct(this)" />
+
+        <img src="image/gucci.jpg" 
+             data-name="Gucci t-shirt"
+             data-price="₹15,999" 
+             data-description="Elevate your everyday wardrobe with this Gucci Signature Cotton T-Shirt, a perfect blend of luxury and casual comfort. Crafted in Italy from 100% premium organic cotton, this T-shirt features the iconic Gucci logo printed boldly across the chest, reflecting timeless elegance and high-end fashion. With its soft, breathable fabric and relaxed fit, it offers all-day comfort whether you’re styling it with jeans, layering under a jacket, or making a statement on its own. " 
+             onclick="updateProduct(this)" />
+
+
+      </div>
+    </div>
+
+    <div class="product-details">
+      <h2 id="product-name">Apple Iphone 16 Pro Max</h2>
+      <p class="price" id="product-price">₹1,44,900</p>
+      <p class="description" id="product-description">Size: 6.9-inch Super Retina XDR OLED display<br>Resolution: 2868 x 1320 pixels<br>Features: ProMotion technology (120Hz), Always-On display, HDR10, Dolby Vision
+
+        </p>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" value="1" min="1" />
+        <br><br>
+      <button onclick="addToCart()">Add to Cart</button>
+      <br><br>
+      <a href="cart.html"><button>View Cart</button></a>
+
+
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
